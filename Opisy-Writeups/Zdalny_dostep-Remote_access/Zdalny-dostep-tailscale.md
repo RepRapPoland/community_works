@@ -10,7 +10,7 @@ Natomiast jeśli chce się mieć bezpośredni dostęp do drukarki moją preferen
 Moją propozycją jako najmiej upierdliwa jest Tailscale. Sieć nakładkowa, tworząca tunele Wireguarda między urządzeniami, które mogą nawiązać ze sobą łączność przez ich serwery, wtedy nie ma konieczności otwierania portów a i NAT przechodzi raczej bez problemów.
 
 Wadą jest to że jednak jest to usługa oferowana przez firmę zewnętrzną, jeśli chce się mieć kontrolę nad całością infrastruktury od klientów po serwery mogę polecić analogicznie rozwiązanie Nebula, do której trzeba hostować własny serwer.
-Nie zamierzam się skupiać na opisie tegoż,.
+Nie zamierzam się skupiać na opisie tegoż.
 # Co potrzeba
 Musimy się zarejestrować w tailscale za pośrednictwem dowolnego obsługiwanego łącznika jak google, github, etc. lista [tu](https://tailscale.com/kb/1013/sso-providers/).
 
@@ -25,9 +25,9 @@ Instalacja na linuksie może sprowadzić się do jednej komendy właściwie, mia
 ```sh
 curl -fsSL https://tailscale.com/install.sh | sh
 ```
-przy czym przed wrzucanie skryptów z internetu bezpośrednio do sh oczywiście warto byłoby je przeczytać żeby wiedzieć co robią i czy na pewno to chcemy.
+przy czym przed wrzucaniem skryptów z internetu bezpośrednio do sh oczywiście warto byłoby je przeczytać żeby wiedzieć co robią i czy na pewno to chcemy.
 Purystów zapraszam [po instrukcje do odpowiedniego systemu (Rpi są pod debianem wylistowane)](https://tailscale.com/kb/1031/install-linux/).
-Skrypt doda do repozytoriów paczkę tailscale, zainstaluje ją po czym poprosi o wykonanie polecenia ```sudo tailscale up``` aby się połączyć.
+Skrypt doda do repozytoriów paczkę tailscale, zainstaluje ją, po czym poprosi o wykonanie polecenia ```sudo tailscale up``` aby się połączyć.
 
 Po pomyślnym połączeniu z serwerami tailscale dostaniemy w terminalu informację zwrotną z linkiem który pozwoli nam połączyć to urządzenie do naszej nowo utworzonej sieci. Najwygodniej go skopiować i wkleić w przeglądarce w której właśnie utworzyliśmy konto i jesteśmy zalogowani.
 
